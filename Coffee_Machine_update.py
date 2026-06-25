@@ -53,7 +53,7 @@ def user_coin():
 def resource_check(menu):
     for item in menu:
         if menu[item]>resources[item]:
-            print(f"Sorry there is not engough {item}")
+            print(f"Sorry there is not engough {item}. Money refunded.")
             return False
     return True
 

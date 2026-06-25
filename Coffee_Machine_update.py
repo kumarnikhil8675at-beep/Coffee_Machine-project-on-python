@@ -63,13 +63,13 @@ def exchange_coin(user_sum,iteam_name):
     if(a!=0):
         return print("here is $",f"{a:.2f}",f"*{round(a,2)}*", "in change.")
     else:
-        return print("you total coin is exact value or you coffe")
+        return print("you total coin is exact value of you coffe")
     
 
 def resource_update(a):
-    resources["coffee"]=resources["coffee"]-MENU[a]["ingredients"]["coffee"]
-    resources["milk"]=resources["milk"]-MENU[a]["ingredients"]["milk"]
-    resources["water"]=resources["water"]-MENU[a]["ingredients"]["water"]
+    resources["coffee"]-=MENU[a]["ingredients"]["coffee"]
+    resources["milk"]-=MENU[a]["ingredients"]["milk"]
+    resources["water"]-=MENU[a]["ingredients"]["water"]
     resources["money"]+=MENU[a]["cost"]
        
         

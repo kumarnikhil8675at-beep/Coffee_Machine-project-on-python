@@ -40,14 +40,12 @@ def check_amout(menu_item,sum_amount):
         return False
 
 def user_coin():
-       Coin={"Penny":0.01,"Dime":0.10,"Nickel":0.05,"Quarter":0.25}
+       Penny=int(input("How many penny?:"))*0.01
+       Dime=int(input("How many dime?:"))*0.10
+       Nickel=int(input("How many nickel?:"))*0.05
+       Quarter=int(input("How many quarters?:"))*0.25
        
-       Penny=int(input("How many penny?:"))
-       Dime=int(input("How many dime?:")) 
-       Nickel=int(input("How many nickel?:")) 
-       Quarter=int(input("How many quarters?:"))
-       
-       sum_amount=(Penny*Coin["Penny"])+(Dime*Coin["Dime"])+(Nickel*Coin["Nickel"])+(Quarter*Coin["Quarter"])
+       sum_amount=Penny+Dime+Nickel+Quarter
        return sum_amount
 
 

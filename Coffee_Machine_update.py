@@ -53,7 +53,7 @@ def user_coin():
 def resource_check(menu):
     for item in menu:
         if menu[item]>resources[item]:
-            print(f"Sorry there is not engough {item}. Money refunded.")
+            print(f"Sorry there is not engough {item}.")
             return False
     return True
 
@@ -70,7 +70,7 @@ def resource_update(a):
     resources["coffee"]=resources["coffee"]-MENU[a]["ingredients"]["coffee"]
     resources["milk"]=resources["milk"]-MENU[a]["ingredients"]["milk"]
     resources["water"]=resources["water"]-MENU[a]["ingredients"]["water"]
-    resources["money"]=resources["money"]+MENU[a]["cost"]
+    resources["money"]+=MENU[a]["cost"]
        
         
 code=True
@@ -96,7 +96,7 @@ while code:
                     print(f"Here is your {user}. Enjou!")
                     resource_update(user)
                 else:
-                    print("you coin is less for",user)
+                    print("you coin is less for",user," Money refunded.")
             else:
                 print("resource is less for ", user)
         

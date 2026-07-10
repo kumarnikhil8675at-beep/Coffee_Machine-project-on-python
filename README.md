@@ -127,6 +127,3 @@ Here is your latte. Enjoy!
 * Object-Oriented Programming (OOP) version
 * GUI version using Tkinter
 
-## Author
-
-Created as a Python learning project to practice functions, dictionaries, loops, and conditionals.
